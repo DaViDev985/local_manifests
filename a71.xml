@@ -1,0 +1,19 @@
+<manifest>
+  <remote name="davidev" fetch="https://github.com/DaViDev985" revision="derp15"/>
+
+  <!--DEVICE-->
+    <project path="device/samsung/a71" name="device_samsung_a71" remote="davidev" />
+    <project path="device/samsung/a71-common" name="device_samsung_a71-common" remote="davidev" />
+  <!--VENDOR-->
+    <project path="vendor/samsung/a71" name="TheMuppets/proprietary_vendor_samsung_a71" revision="lineage-22.0" remote="github" />
+    <project path="vendor/samsung/a71-common" name="TheMuppets/proprietary_vendor_samsung_a71-common" revision="lineage-22.0" remote="github" />
+  <!--KERNEL-->
+    <project path="kernel/samsung/a71" name="kernel_samsung_a71" remote="davidev" />
+  <!--HARDWARE-->
+    <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" revision="lineage-22.0" remote="github" />
+    <project path="hardware/samsung-ext/interfaces" name="hardware_samsung-ext_interfaces" revision="fourteen" remote="davidev" />
+
+  <!--ViPER4AndroidFX-->
+    <project name="packages_apps_ViPER4AndroidFX" path="packages/apps/ViPER4AndroidFX" revision="v4a" remote="davidev" clone-depth="1" />
+
+</manifest>
