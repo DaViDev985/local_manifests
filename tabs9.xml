@@ -1,0 +1,20 @@
+<manifest>
+  <remote name="davidev" fetch="https://github.com/DaViDev985" revision="derp15"/>
+
+  <!--DEVICE-->
+    <project path="device/samsung/gts9wifi" name="device_samsung_gts9wifi" remote="davidev" revision="derp15" />
+    <project path="device/samsung/sm8550-common" name="device_samsung_sm8550-common" remote="davidev" />
+  <!--VENDOR-->
+    <project path="vendor/samsung/gts9wifi" name="samsung-sm8550-tab/android_vendor_samsung_gts9wifi" revision="lineage-22.0" remote="github" />
+    <project path="vendor/samsung/sm8550-common" name="samsung-sm8550-tab/android_vendor_samsung_sm8550-common" revision="lineage-22.0" remote="github" />
+  <!--KERNEL-->
+    <project path="kernel/samsung/sm8550" name="samsung-sm8550-tab/android_kernel_samsung_sm8550" revision="android15-stable" remote="github" />
+    <project path="kernel/samsung/sm8550-modules" name="samsung-sm8550-tab/android_kernel_samsung_sm8550-modules" revision="lineage-22.0-fod_hbm" remote="github" />
+    <project path="kernel/samsung/sm8550-devicetrees" name="samsung-sm8550-tab/android_kernel_samsung_sm8550-devicetrees" revision="lineage-22.0-rebase" remote="github" />
+  <!--HARDWARE-->
+    <project path="hardware/samsung" name="samsung-sm8550-tab/android_hardware_samsung" revision="lineage-22.0" remote="github" />
+
+  <!--ViPER4AndroidFX-->
+    <project name="packages_apps_ViPER4AndroidFX" path="packages/apps/ViPER4AndroidFX" revision="v4a" remote="davidev" clone-depth="1" />
+
+</manifest>
