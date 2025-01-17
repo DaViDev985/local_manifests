@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="davidev" 
+          fetch="https://github.com/DaViDev985" 
+          revision="derp15.1"/>
+  <remote name="LineageOS" 
+          fetch="https://github.com/LineageOS" 
+          revision="lineage-22.1"/>
+  <remote name="TheMuppets" 
+          fetch="https://github.com/TheMuppets" 
+          revision="lineage-22.1"/>
+
+<!-- Device trees -->
+  <project path="device/nintendo/nx" name="device_nintendo_nx" remote="davidev"/>
+  <project path="device/nintendo/nx_tab" name="device_nintendo_nx_tab" remote="davidev"/>
+  <project path="device/nvidia/t210-common" name="device_nvidia_t210-common" remote="davidev"/>
+  <project path="device/nvidia/tegra-common" name="device_nvidia_tegra-common" remote="davidev"/>
+  <project path="device/nvidia/sepolicy" name="android_device_nvidia_sepolicy" remote="LineageOS"/>
+<!-- Kernel trees -->
+  <project name="android_kernel_nvidia_cypress-fmac-upstream" remote="LineageOS" path="kernel/nvidia/cypress-fmac-upstream"/>
+  <project name="android_kernel_nvidia_exfat" remote="LineageOS" path="kernel/nvidia/exfat"/>
+  <project name="android_kernel_nvidia_kernel-nx" remote="LineageOS" path="kernel/nvidia/kernel-4.9-nx"/>
+  <project name="android_kernel_nvidia_nvidia-nx" remote="LineageOS" path="kernel/nvidia/nvidia-nx"/>
+  <project name="android_kernel_nvidia_nvgpu" remote="LineageOS" path="kernel/nvidia/nvgpu"/>
+  <project name="android_kernel_nvidia_wireguard" remote="LineageOS" path="kernel/nvidia/wireguard"/>
+
+<!-- Hardware trees -->
+  <project name="android_hardware_nintendo_arm-trusted-firmware" remote="LineageOS" path="hardware/nintendo/arm-trusted-firmware"/>
+  <project name="android_hardware_nintendo_joycond" remote="LineageOS" path="hardware/nintendo/joycond"/>
+  <project name="android_hardware_intel_sensors-iio" remote="LineageOS" path="hardware/intel/sensors-iio"/>
+  <project name="android_hardware_nvidia_interfaces" remote="LineageOS" path="hardware/nvidia/interfaces"/>
+  <project name="android_hardware_nvidia_light" remote="LineageOS" path="hardware/nvidia/light"/>
+  <project name="android_hardware_nvidia_platform_t210_nx" remote="LineageOS" path="hardware/nvidia/platform/t210/nx"/>
+  <project name="android_hardware_nvidia_platform_t210_common" remote="LineageOS" path="hardware/nvidia/platform/t210/common"/>
+  <project name="android_hardware_nvidia_platform_tegra_common" remote="LineageOS" path="hardware/nvidia/platform/tegra/common"/>
+  <project name="android_hardware_nvidia_power" remote="LineageOS" path="hardware/nvidia/power"/>
+  <project name="android_hardware_nvidia_thermal" remote="LineageOS" path="hardware/nvidia/thermal"/>
+  <project name="android_hardware_nvidia_soc_t210" remote="LineageOS" path="hardware/nvidia/soc/t210"/>
+  <project name="android_hardware_nvidia_soc_tegra" remote="LineageOS" path="hardware/nvidia/soc/tegra"/>
+
+<!-- Vendor trees -->
+  <project name="proprietary_vendor_nintendo_nx" remote="TheMuppets" path="vendor/nintendo/nx"/>
+  <project name="proprietary_vendor_nvidia_t210" remote="TheMuppets" path="vendor/nvidia/t210"/>
+  <project name="proprietary_vendor_nvidia_common" remote="TheMuppets" path="vendor/nvidia/common"/>
+  
+<!-- Missing stuff from LineageOS -->
+  <project name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3" remote="LineageOS" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-9.3"/>
+  <project name="android_external_libevdev" remote="LineageOS" path="external/libevdev"/>
+<!--
+  <project name="android_bootable_tianocore_cmocka" remote="LineageOS" path="bootable/tianocore/cmocka"/>
+  <project name="android_bootable_tianocore_edk2" remote="LineageOS" path="bootable/tianocore/edk2"/>
+  <project name="android_bootable_tianocore_edk2-non-osi" remote="LineageOS" path="bootable/tianocore/edk2-non-osi"/>
+  <project name="android_bootable_tianocore_edk2-nvidia" remote="LineageOS" path="bootable/tianocore/edk2-nvidia"/>
+  <project name="android_bootable_tianocore_edk2-nvidia-lineage" remote="LineageOS" path="bootable/tianocore/edk2-nvidia-lineage"/>
+  <project name="android_bootable_tianocore_edk2-nvidia-non-osi" remote="LineageOS" path="bootable/tianocore/edk2-nvidia-non-osi"/>
+  <project name="android_bootable_tianocore_edk2-platforms" remote="LineageOS" path="bootable/tianocore/edk2-platforms"/>
+  <project name="android_bootable_tianocore_googletest" remote="LineageOS" path="bootable/tianocore/googletest"/>
+  <project name="android_bootable_tianocore_jansson" remote="LineageOS" path="bootable/tianocore/jansson"/>
+  <project name="android_bootable_tianocore_libspdm" remote="LineageOS" path="bootable/tianocore/libspdm"/>
+  <project name="android_bootable_tianocore_mbedtls" remote="LineageOS" path="bootable/tianocore/mbedtls"/>
+  <project name="android_bootable_tianocore_mipisyst" remote="LineageOS" path="bootable/tianocore/mipisyst"/>
+  <project name="android_bootable_tianocore_openssl" remote="LineageOS" path="bootable/tianocore/openssl"/>
+  <project name="android_bootable_tianocore_pylibfdt" remote="LineageOS" path="bootable/tianocore/pylibfdt"/>
+-->
+</manifest>
