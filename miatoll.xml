@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="davidev" 
+          fetch="https://github.com/DaViDev985" 
+          revision="derp15.1"/>
+  <remote name="clarence" 
+          fetch="https://github.com/clarencekopitiam/" 
+          revision="15"/>
+
+  <!-- Device tree -->
+  <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="davidev"/>
+
+  <!-- Kernel tree -->
+  <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="clarence"/>
+  
+  <!-- Vendor trees -->
+  <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="clarence"/>
+  <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="clarence"/>
+
+  <!-- Hardware trees -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="clarence"/>
+
+</manifest>
