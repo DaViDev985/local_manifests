@@ -1,6 +1,6 @@
 <manifest>
-  <remote name="linux4" fetch="https://github.com/linux4-bringup-priv" revision="lineage-22.0"/>
-  <remote name="davidev" fetch="https://github.com/DaViDev985" revision="derp15"/>
+  <remote name="linux4" fetch="https://github.com/linux4-bringup-priv" revision="lineage-22.1"/>
+  <remote name="davidev" fetch="https://github.com/DaViDev985" revision="derp15.1"/>
 
   <!-- samson device trees -->
   <project path="device/samsung/gta4xl" name="device_samsung_gta4xl" remote="davidev"/>
@@ -30,5 +30,8 @@
 
   <!-- SEPolicy -->
   <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="linux4" />
+
+  <!-- ViPER4AndroidFX -->
+  <project name="packages_apps_ViPER4AndroidFX" path="packages/apps/ViPER4AndroidFX" revision="v4a" remote="davidev" clone-depth="1" />
 
 </manifest>
