@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="davidev" 
+          fetch="https://github.com/DaViDev985" 
+          revision="derp15.2"/>
+  <remote name="LineageOS" 
+          fetch="https://github.com/LineageOS/" 
+          revision="lineage-22.2"/>
+<remote name="TheMuppets" 
+          fetch="https://github.com/TheMuppets/" 
+          revision="lineage-22.2"/>
+
+  <!-- S10 device trees-->
+  <project path="device/samsung/beyond1lte" name="device_samsung_beyond1lte" remote="davidev"/>
+  <project path="device/samsung/exynos9820-common" name="device_samsung_exynos9820-common" remote="davidev"/>
+  <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="LineageOS"/>
+
+  <!-- S10 kernel tree-->
+  <project path="kernel/samsung/exynos9820" name="kernel_samsung_exynos9820" remote="davidev"/>
+  
+  <!-- S10 vendor trees-->
+  <project path="vendor/samsung/exynos9820-common" name="proprietary_vendor_samsung_exynos9820-common" remote="TheMuppets"/>
+  <project path="vendor/samsung/beyond1lte" name="proprietary_vendor_samsung_beyond1lte" remote="TheMuppets"/>
+  
+  <!-- S10 hardware trees-->
+  <project path="hardware/samsung" name="android_hardware_samsung" remote="LineageOS"/>
+  <project path="hardware/samsung_slsi-linaro/config" name="android_hardware_samsung_slsi-linaro_config" remote="LineageOS"/>
+  <project path="hardware/samsung_slsi-linaro/exynos" name="android_hardware_samsung_slsi-linaro_exynos" remote="LineageOS"/>
+  <project path="hardware/samsung_slsi-linaro/exynos5" name="android_hardware_samsung_slsi-linaro_exynos5" remote="LineageOS"/>
+  <project path="hardware/samsung_slsi-linaro/graphics" name="android_hardware_samsung_slsi-linaro_graphics" remote="LineageOS"/>
+  <project path="hardware/samsung_slsi-linaro/interfaces" name="android_hardware_samsung_slsi-linaro_interfaces" remote="LineageOS"/>
+  <project path="hardware/samsung_slsi-linaro/openmax" name="android_hardware_samsung_slsi-linaro_openmax" remote="LineageOS"/>
+</manifest>
