@@ -2,22 +2,18 @@
 <manifest>
   <remote name="davidev" 
           fetch="https://github.com/DaViDev985" 
-          revision="derp15.1"/>
-  <remote name="mario" 
-          fetch="https://gitlab.com/ThankYouMario/" 
-          revision="uvite"/>
+          revision="derp16"/>
 
   <!-- Spacewar device tree-->
   <project path="device/nothing/Spacewar" name="device_nothing_Spacewar" remote="davidev"/>
 
   <!-- Spacewar kernel tree-->
-  <project path="kernel/nothing/sm7325" name="kernel_nothing_sm7325" remote="davidev"/>
+  <project path="kernel/nothing/sm7325" name="kernel_nothing_sm7325" remote="davidev" revision="derp16-ksun"/>
   
   <!-- Spacewar vendor tree-->
   <project path="vendor/nothing/Spacewar" name="vendor_nothing_Spacewar" remote="davidev"/>
-  <project path="vendor/nothing/camera" name="proprietary_vendor_nothing_camera" remote="mario"/>
-  
-  <project name="packages_apps_PixysGlyph" path="packages/apps/PixysGlyph" remote="davidev"/>
+  <project path="vendor/nothing/camera" name="proprietary_vendor_nothing_camera" remote="davidev"/>
 
+  <project path="hardware/nothing" name="android_hardware_nothing" remote="davidev"/>
   <project name="packages_apps_ViPER4AndroidFX" path="packages/apps/ViPER4AndroidFX" revision="v4a" remote="davidev" clone-depth="1" />
 </manifest>
