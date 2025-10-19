@@ -5,7 +5,7 @@
 <!--DEVICE-->
     <project path="device/samsung/gta4xlveu" name="device_samsung_gta4xlveu" remote="davidev" />
 <!--KERNEL-->
-    <project path="kernel/samsung/gta4xlve" name="android_kernel_samsung_gta4xlve" remote="davidev" revision="derp16-ksun+susfs" />
+    <project path="kernel/samsung/gta4xlve" name="kernel_samsung_gta4xlve" remote="davidev" revision="derp16-ksun+susfs" />
 <!--VENDOR-->
     <project path="vendor/samsung/gta4xlveu" name="android_vendor_samsung_gta4xlveu" remote="tabdev" />
 </manifest>
