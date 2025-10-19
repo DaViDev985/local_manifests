@@ -1,0 +1,11 @@
+<manifest>
+<remote name="davidev" fetch="https://github.com/DaViDev985" revision="derp16"/>
+<remote name="tabdev" fetch="https://github.com/gta4xlve-dev" revision="lineage-23.0"/>
+
+<!--DEVICE-->
+    <project path="device/samsung/gta4xlveu" name="device_samsung_gta4xlveu" remote="davidev" />
+<!--KERNEL-->
+    <project path="kernel/samsung/gta4xlve" name="android_kernel_samsung_gta4xlve" remote="davidev" revision="derp16-ksun+susfs" />
+<!--VENDOR-->
+    <project path="vendor/samsung/gta4xlveu" name="android_vendor_samsung_gta4xlveu" remote="tabdev" />
+</manifest>
