@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="davidev" 
+          fetch="https://github.com/DaViDev985" 
+          revision="derp16.2-cam"/>
+
+  <!-- lexus device trees -->
+  <project path="device/oneplus/lexus" name="device_oneplus_lexus" remote="davidev"/>
+  <project path="device/oneplus/sm8650-common" name="device_oneplus_sm8650-common" remote="davidev"/>
+
+  <!-- lexus kernel trees -->
+  <project path="kernel/oneplus/sm8650" name="kernel_oneplus_sm8650" remote="davidev" revision="derp16.2-new"/>
+  <project path="kernel/oneplus/sm8650-modules" name="kernel_oneplus_sm8650-modules" remote="davidev"/>
+  <project path="kernel/oneplus/sm8650-devicetrees" name="kernel_oneplus_sm8650-devicetrees" remote="davidev"/>
+
+  <!-- lexus vendor trees -->
+  <project path="vendor/oneplus/lexus" name="vendor_oneplus_lexus-personal" remote="davidev"/>
+  <project path="vendor/oneplus/sm8650-common" name="vendor_oneplus_sm8650-common" remote="davidev"/>
+
+  <!-- lexus other trees (hw and additions) -->
+  <project path="hardware/oplus" name="hardware_oplus" remote="davidev"/>
+  <project path="vendor/oplus/camera" name="vendor_oplus_camera" remote="davidev"/>
+  <project path="vendor/oneplus/ir" name="vendor_oneplus_ir" remote="davidev" revision='derp16.2'/>
+  <project name="packages_apps_ViPER4AndroidFX" path="packages/apps/ViPER4AndroidFX" revision="v4a" remote="davidev"/>
+
+</manifest>
